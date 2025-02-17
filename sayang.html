@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="sayang.css">
+</head>
+<body>
+    <header>
+        <h1>HI SAYANG!</h1>
+    </header>
+    <div class="container">
+        <div class="images">
+            <div class="image-with-caption">
+                <img src="SAYANG.jpg" alt="Image 1">
+                <p>I</p>
+            </div>
+            <div class="image-with-caption">
+                <img src="SAYANG 2.jpg" alt="Image 2">
+                <p>LOVE</p>
+            </div>
+            <div class="image-with-caption">
+                <img src="SAYANG 3.jpg" alt="Image 3">
+                <p>YOU</p>
+            </div>
+        </div>
+        <p class="note">Pagi sayang! 💖
+
+            Ni gambar kita berdua memang best lah, betul-betul nampak kita happy bersama. Tapi yang paling penting, saya nak awak tahu, saya selalu hargai awak lebih daripada apa-apa. Dalam semua benda yang saya sibuk, awak tetap jadi yang paling penting. Saya sayang awak, dan saya akan buat lebih untuk kita. Bangun nanti, senyum besar ye, sebab saya sentiasa ada untuk awak.💕</p>
+        <button onclick="playAudio()">Click Me</button>
+        <div class="popup-message" id="popup-message">
+            <p>Selamat pagi, cinta! 💖
+                Sayang, maafkan saya kalau kebelakangan ini saya terlalu sibuk dan tak dapat beri perhatian yang awak perlukan. Saya tahu awak penting dalam hidup saya, dan saya janji saya akan cuba untuk lebih luangkan masa dengan awak. Kadang-kadang kerja membuatkan saya terlupa, tapi hati saya tetap ada untuk awak. Saya sayang awak sangat-sangat, dan tak ada apa yang boleh buat saya jauh dari awak. Harap awak faham, dan kita boleh perbaiki semua ni bersama. 💕</p>
+            <button onclick="closeMessage()">Close</button>
+        </div>
+        
+        <!-- Audio element, will be played when button is clicked -->
+        <audio id="myAudio">
+            <source src="KISAH CINTA KITA.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('myAudio');
+            audio.play();  // Play the audio when button is clicked
+            showMessage();  // Show the popup message
+        }
+
+        function showMessage() {
+            document.getElementById('popup-message').style.display = 'block';
+        }
+        
+        function closeMessage() {
+            document.getElementById('popup-message').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
